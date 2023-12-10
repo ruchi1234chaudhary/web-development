@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0 ;
+            padding :0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color: blue;
+            border: 3px  solid rgb(119, 6, 87);
+            /* we can set margin/padding for top right bottom left */
+            /* padding  : 25px 50px 75px 100px; */
+            /* if we have same value of left/right and top/bottom then we can write like this  */
+            /* padding : 30px 45px; */
+            margin :14px 19px;
+            padding: 34px 19px;
+            border-radius:23px ;
+            width: 533px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3> this is my heading </h3>
+        <P id="first" > 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla maxime animi assumenda sunt alias voluptas similique possimus voluptate sit fugit, saepe mollitia nesciunt repudiandae tempora, eos, impedit atque voluptatibus?
+        </P>
+    </div>
+    <div class="container">
+        <h3> this is my heading </h3>
+        <P id="second" > 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla maxime animi assumenda sunt alias voluptas similique possimus voluptate sit fugit, saepe mollitia nesciunt repudiandae tempora, eos, impedit atque voluptatibus?
+        </P>
+    </div>
+    <div class="container">
+        <h3> this is my heading </h3>
+        <P id="third" > 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nulla maxime animi assumenda sunt alias voluptas similique possimus voluptate sit fugit, saepe mollitia nesciunt repudiandae tempora, eos, impedit atque voluptatibus?
+        </P>
+    </div>
+
+    
+</body>
+</html>

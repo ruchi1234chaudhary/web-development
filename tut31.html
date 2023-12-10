@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color:red;
+            color:black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* that means directly attcahed para with div follow those properties */
+       div >p{
+        font-weight: bold;
+        background-color: green;
+        color: yellow;
+
+        }
+        /* div jaha khatam ho uske just bad vale <p> pe ye properties apply hoti hai */
+        div+p{
+            background-color: blueviolet;
+            color: azure;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1> more on selectors</h1>
+    <div class="container">
+    <div class="row">
+        <ul>
+            <li class="item"><p> this is the para inside li</p></li>
+        </ul>
+        <p> this is a paragraph</p>
+    </div>
+        <p> this is another paragraph</p>
+    </div>
+    <p> this is outermost paragraph</p>
+
+    
+</body>
+</html>

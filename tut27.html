@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> visibility and z-index </title>
+    <style>
+       .box{
+        width: 170px;
+        height: 170px;
+        border:2px solid black;
+       } 
+       #box1{
+         position: relative;
+         top: 48px;
+         z-index: -35;
+         background-color: red;
+
+       }
+       #box2{
+         /* z-index only work on position: relative,fixed ,sticky,absolute; not work for static */
+         position: relative;
+         top: 14px;
+         z-index: -165;
+         /* display: none;  */
+         /* hide spaces with its properties */
+         /* visibility: hidden; */
+         /* hide properties but remain empty spaces */
+         background-color: aqua;
+
+       }
+       #box3{
+
+         background-color: blue;
+       }
+       box4{
+         background-color: rgb(9, 8, 9);
+
+
+       }
+    </style>
+</head>
+<body>
+   <div class="box" id="box1"></div>
+   <div class="box" id="box2"></div>
+   <div class="box" id="box3"></div>
+   <div class="box" id="box4"></div>
+
+
+    
+</body>
+</html>
