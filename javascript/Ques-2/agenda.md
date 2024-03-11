@@ -1,0 +1,1 @@
+Create a new class called Admin which inherits from User. Add new method called editData to admin that allows it to edit data.
